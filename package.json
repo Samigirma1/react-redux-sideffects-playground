@@ -1,0 +1,28 @@
+{
+  "name": "side-effects-expt",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "random-words": "^1.1.2",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.7.3"
+  },
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts",
+    "prepublish": "npm run build",
+    "start": "node lib/index.js",
+    "build-and-run": "yarn build && yarn start"
+  },
+  "devDependencies": {
+    "@types/random-words": "^1.1.2"
+  }
+}
